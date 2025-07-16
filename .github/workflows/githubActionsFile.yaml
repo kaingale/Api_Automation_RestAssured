@@ -2,7 +2,7 @@ name: CI for RestAssured TestNG Project
 
 on:
   push:
-    branches: [ main, feature/branch-demo ]
+    branches: [ main, feature/api-demo ]
   pull_request:
     branches: [ main ]
 
