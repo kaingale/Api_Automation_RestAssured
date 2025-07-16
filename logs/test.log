@@ -1,0 +1,9 @@
+2025-07-16 10:43:54 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\kaingale\Desktop\Api_Automation_Assignments\Api_Automation_Framework\testng.xml"
+2025-07-16 10:43:54 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\kaingale\Desktop\Api_Automation_Assignments\Api_Automation_Framework\testng.xml
+
+2025-07-16 10:43:55 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - ==== TC_02_Assign2_AuthorizationTest started ====
+2025-07-16 10:43:55 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - creating post
+2025-07-16 10:43:57 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - validating authorization header and status code
+2025-07-16 10:43:57 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - validating response values
+2025-07-16 10:43:57 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - ==== TC_02_Assign2_AuthorizationTest finished ====
