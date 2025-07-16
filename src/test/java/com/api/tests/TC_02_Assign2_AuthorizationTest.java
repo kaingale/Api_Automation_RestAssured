@@ -48,7 +48,6 @@ public class TC_02_Assign2_AuthorizationTest {
 			logger.info("creating post");
 			String authorizationToken = "Bearer_faketoken123";
 			Response response = postApiServices.createPosts(postReqestPayload,authorizationToken);
-			response.then().log().all();
 			
 			logger.info("validating authorization header and status code");
 			Assert.assertEquals(response.getStatusCode(), 201, "Authorization Test failed! status code is not 201..");

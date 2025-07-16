@@ -9,9 +9,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.api.endpoints.CommentsApiServices;
-import com.api.endpoints.PostsApiServices;
-import com.api.models.PostsRequestPayload;
-import com.github.javafaker.Faker;
 
 import io.restassured.response.Response;
 
@@ -33,7 +30,6 @@ public class TC_05_Assign5_CustomHeaderAndCookiesTest {
 
 			logger.info("getting comments by postid");
 			Response response = commentsApiService.getCommentsByPostsId(2);
-			response.then().log().all();
 			
 			logger.info("validating authorization header and custom cookies");
 			Assert.assertEquals(response.getStatusCode(), 200, "Authorization Test failed! status code is not 201..");
