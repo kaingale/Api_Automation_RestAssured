@@ -1,21 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T10:43:54 IST" name="Suite" finished-at="2025-07-16T10:43:57 IST" duration-ms="2850">
+  <suite started-at="2025-07-16T14:30:33 IST" name="Suite" finished-at="2025-07-16T14:30:47 IST" duration-ms="13743">
     <groups>
     </groups>
-    <test started-at="2025-07-16T10:43:54 IST" name="Test" finished-at="2025-07-16T10:43:57 IST" duration-ms="2850">
-      <class name="com.api.tests.TC_02_Assign2_AuthorizationTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.TC_02_Assign2_AuthorizationTest@4535b6d5]" started-at="2025-07-16T10:43:55 IST" name="setup" finished-at="2025-07-16T10:43:55 IST" duration-ms="116" status="PASS">
+    <test started-at="2025-07-16T14:30:33 IST" name="Test" finished-at="2025-07-16T14:30:47 IST" duration-ms="13743">
+      <class name="com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest@340b9973]" started-at="2025-07-16T14:30:47 IST" name="setup" finished-at="2025-07-16T14:30:47 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAuthorizationTest()[pri:0, instance:com.api.tests.TC_02_Assign2_AuthorizationTest@4535b6d5]" started-at="2025-07-16T10:43:55 IST" name="verifyAuthorizationTest" description="Verify authorization test" finished-at="2025-07-16T10:43:57 IST" duration-ms="2541" status="PASS">
+        <test-method signature="verifyAuthorizationTest()[pri:0, instance:com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest@340b9973]" started-at="2025-07-16T14:30:47 IST" name="verifyAuthorizationTest" description="Verify authorization test" finished-at="2025-07-16T14:30:47 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAuthorizationTest -->
+      </class> <!-- com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest -->
+      <class name="com.api.tests.TC_01_Assign1_CrudUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.TC_01_Assign1_CrudUserTest@1817f1eb]" started-at="2025-07-16T14:30:34 IST" name="setup" finished-at="2025-07-16T14:30:34 IST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createUserTest()[pri:1, instance:com.api.tests.TC_01_Assign1_CrudUserTest@1817f1eb]" started-at="2025-07-16T14:30:34 IST" name="createUserTest" finished-at="2025-07-16T14:30:39 IST" duration-ms="4974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method signature="readUserById()[pri:2, instance:com.api.tests.TC_01_Assign1_CrudUserTest@1817f1eb]" started-at="2025-07-16T14:30:39 IST" name="readUserById" finished-at="2025-07-16T14:30:39 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readUserById -->
+        <test-method signature="updateUserTest()[pri:3, instance:com.api.tests.TC_01_Assign1_CrudUserTest@1817f1eb]" started-at="2025-07-16T14:30:39 IST" name="updateUserTest" finished-at="2025-07-16T14:30:40 IST" duration-ms="1289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserTest -->
+        <test-method signature="deleteUserTest()[pri:4, instance:com.api.tests.TC_01_Assign1_CrudUserTest@1817f1eb]" started-at="2025-07-16T14:30:40 IST" name="deleteUserTest" finished-at="2025-07-16T14:30:41 IST" duration-ms="977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserTest -->
+      </class> <!-- com.api.tests.TC_01_Assign1_CrudUserTest -->
+      <class name="com.api.tests.TC_02_Assign2_AuthorizationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.TC_02_Assign2_AuthorizationTest@c5dc4a2]" started-at="2025-07-16T14:30:41 IST" name="setup" finished-at="2025-07-16T14:30:41 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAuthorizationTest()[pri:0, instance:com.api.tests.TC_02_Assign2_AuthorizationTest@c5dc4a2]" started-at="2025-07-16T14:30:41 IST" name="verifyAuthorizationTest" description="Verify authorization test" finished-at="2025-07-16T14:30:43 IST" duration-ms="2110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAuthorizationTest -->
       </class> <!-- com.api.tests.TC_02_Assign2_AuthorizationTest -->
+      <class name="com.api.tests.TC_04_Assign4_QueryParamTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.TC_04_Assign4_QueryParamTest@52066604]" started-at="2025-07-16T14:30:47 IST" name="setup" finished-at="2025-07-16T14:30:47 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAuthorizationTest()[pri:0, instance:com.api.tests.TC_04_Assign4_QueryParamTest@52066604]" started-at="2025-07-16T14:30:47 IST" name="verifyAuthorizationTest" description="Verify query parameter test" finished-at="2025-07-16T14:30:47 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAuthorizationTest -->
+      </class> <!-- com.api.tests.TC_04_Assign4_QueryParamTest -->
+      <class name="com.api.tests.TC_03_Assign3_CreateUsersDDTest">
+        <test-method signature="createUsersDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.api.tests.TC_03_Assign3_CreateUsersDDTest@4a194c39]" started-at="2025-07-16T14:30:44 IST" name="createUsersDataDriven" data-provider="UserData" finished-at="2025-07-16T14:30:45 IST" duration-ms="783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc1 abc2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@12]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abc12@myorg.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsersDataDriven -->
+        <test-method signature="createUsersDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.api.tests.TC_03_Assign3_CreateUsersDDTest@4a194c39]" started-at="2025-07-16T14:30:45 IST" name="createUsersDataDriven" data-provider="UserData" finished-at="2025-07-16T14:30:47 IST" duration-ms="1537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc3 abc4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@34]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abc34@myorg.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsersDataDriven -->
+        <test-method signature="createUsersDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.api.tests.TC_03_Assign3_CreateUsersDDTest@4a194c39]" started-at="2025-07-16T14:30:47 IST" name="createUsersDataDriven" data-provider="UserData" finished-at="2025-07-16T14:30:47 IST" duration-ms="301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc5 abc6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@56]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abc56@myorg.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsersDataDriven -->
+      </class> <!-- com.api.tests.TC_03_Assign3_CreateUsersDDTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

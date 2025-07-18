@@ -12,5 +12,5 @@
       <class name="com.api.tests.TC_04_Assign4_QueryParamTest"/>
       <class name="com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+</suite> 
