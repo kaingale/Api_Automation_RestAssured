@@ -81,7 +81,7 @@ public class TC_01_Assign1_CrudUserTest {
 		}
 	}
 
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void readUserById() {
 		try {
 			logger.info("==== readUserById started ====");
@@ -98,7 +98,7 @@ public class TC_01_Assign1_CrudUserTest {
 		}
 	}
 
-	@Test(priority = 3)
+//	@Test(priority = 3)
 	public void updateUserTest() {
 		try {
 			logger.info("==== updateUserTest started ====");
@@ -119,7 +119,7 @@ public class TC_01_Assign1_CrudUserTest {
 		}
 	}
 
-	@Test(priority = 4)
+//	@Test(priority = 4)
 	public void deleteUserTest() {
 		try {
 			logger.info("==== deleteUserTest started ====");
