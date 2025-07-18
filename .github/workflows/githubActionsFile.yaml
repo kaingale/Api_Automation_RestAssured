@@ -7,7 +7,7 @@ on:
         - 'feature/**'
       paths-ignore:
         - '.github/workflows/*'
-    
+  workflow_dispatch:    
 
 permissions:
   contents: write 
