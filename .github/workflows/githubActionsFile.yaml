@@ -69,9 +69,7 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: |
-      (github.event_name == 'push' && startsWith(github.ref, 'refs/heads/feature/')) ||
-      (github.event_name == 'pull_request' && github.base_ref == 'main')
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
