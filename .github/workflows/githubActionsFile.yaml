@@ -7,6 +7,9 @@ on:
         - 'feature/**'
       paths-ignore:
         - '.github/workflows/*'
+  pull_request:
+      branches:
+        - main
   workflow_dispatch:    
 
 permissions:
