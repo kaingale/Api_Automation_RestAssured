@@ -2,9 +2,12 @@ name: CI for RestAssured TestNG Project
 
 on:
   push:
-    branches: [ main, feature/api-demo ]
-  pull_request:
-    branches: [ main ]
+      branches:
+        - main
+        - 'feature/**'
+      paths-ignore:
+        - '.github/workflows/*'
+    
 
 permissions:
   contents: write 
