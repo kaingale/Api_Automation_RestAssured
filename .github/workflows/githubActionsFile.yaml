@@ -3,7 +3,7 @@ name: CI for RestAssured TestNG Project
 on:
   push:
     branches:
-      - 'feature/**'
+      - 'feature/api-demo'
     paths-ignore:
             - '.github/workflows/*'  
             - README.md  
