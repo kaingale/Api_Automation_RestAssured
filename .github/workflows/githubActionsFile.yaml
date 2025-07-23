@@ -1,0 +1,102 @@
+name: CI for RestAssured TestNG Project
+
+on:
+  push:
+    branches:
+      - 'feature/api-demo'
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Cache Maven packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Build with Maven
+        run: mvn clean compile
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Clean test-reports directory
+        run: rm -rf test-reports/* || true
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Cache Maven packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Run RestAssured TestNG Tests
+        run: mvn test
+
+      - name: List contents of test-reports after test
+        run: ls -l test-reports
+
+      - name: Archive Test Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: ./test-reports/
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download Test Reports Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: test-reports
+          path: test-reports
+ 
+      - name: List files to be published
+        run: ls -l test-reports
+
+      - name: Keep only the latest report
+        run: |
+          cd test-reports
+          latest=$(ls -t Test-Report*.html | head -n1)
+          ls Test-Report*.html | grep -v "$latest" | xargs rm -f || true
+          echo "<html><head><meta http-equiv='refresh' content='0; url=$latest'></head><body></body></html>" > index.html
+
+      - name: Deploy Latest Test Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./test-reports
+
+    
