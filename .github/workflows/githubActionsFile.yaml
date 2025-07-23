@@ -101,7 +101,6 @@ jobs:
           done
           echo "</ul></body></html>" >> test-reports/index.html
 
-
       - name: Deploy Latest Test Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
