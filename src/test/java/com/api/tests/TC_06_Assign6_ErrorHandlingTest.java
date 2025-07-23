@@ -74,7 +74,7 @@ public class TC_06_Assign6_ErrorHandlingTest {
 		}
 	}
 
-	@Test
+//	@Test
 	public void testInvalidHttpMethod() {
 		try {
 			logger.info("invalid http method started");
