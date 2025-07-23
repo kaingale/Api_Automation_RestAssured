@@ -86,12 +86,14 @@ jobs:
       - name: List files to be published
         run: ls -l test-reports
 
-      - name: Keep only the latest report
+      - name: Generate index.html for all reports
         run: |
-          cd test-reports
-          latest=$(ls -t Test-Report*.html | head -n1)
-          ls Test-Report*.html | grep -v "$latest" | xargs rm -f || true
-          echo "<html><head><meta http-equiv='refresh' content='0; url=$latest'></head><body></body></html>" > index.html
+          echo "<html><body><h1>Test Reports</h1><ul>" > test-reports/index.html
+          for file in test-reports/Test-Report*.html; do
+            fname=$(basename "$file")
+            echo "<li><a href=\"$fname\">$fname</a></li>" >> test-reports/index.html
+          done
+          echo "</ul></body></html>" >> test-reports/index.html
 
       - name: Deploy Latest Test Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
