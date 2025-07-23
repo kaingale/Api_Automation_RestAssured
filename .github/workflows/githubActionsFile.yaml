@@ -89,13 +89,6 @@ jobs:
       - name: List files to be published
         run: ls -l test-reports
 
-      - name: Keep only the latest report
-        run: |
-          cd test-reports
-          latest=$(ls -t TestReport*.html | head -n1)
-          ls TestReport*.html | grep -v "$latest" | xargs rm -f || true
-          echo "<html><head><meta http-equiv='refresh' content='0; url=$latest'></head><body></body></html>" > index.html
-
       - name: Deploy Latest Test Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
