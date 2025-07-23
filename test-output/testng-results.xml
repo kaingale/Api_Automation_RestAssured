@@ -1,21 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="13" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T19:17:39 IST" name="Suite" finished-at="2025-07-16T19:17:43 IST" duration-ms="4464">
+  <suite started-at="2025-07-23T10:39:16 IST" name="Suite" finished-at="2025-07-23T10:39:38 IST" duration-ms="21462">
     <groups>
     </groups>
-    <test started-at="2025-07-16T19:17:39 IST" name="Test" finished-at="2025-07-16T19:17:43 IST" duration-ms="4464">
-      <class name="com.api.tests.TC_01_Assign1_CrudUserTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.TC_01_Assign1_CrudUserTest@66746f57]" started-at="2025-07-16T19:17:39 IST" name="setup" finished-at="2025-07-16T19:17:39 IST" duration-ms="69" status="PASS">
+    <test started-at="2025-07-23T10:39:16 IST" name="Test" finished-at="2025-07-23T10:39:38 IST" duration-ms="21462">
+      <class name="com.api.tests.TC_06_Assign6_ErrorHandlingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.TC_06_Assign6_ErrorHandlingTest@1d730606]" started-at="2025-07-23T10:39:26 IST" name="setup" finished-at="2025-07-23T10:39:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createUserTest()[pri:1, instance:com.api.tests.TC_01_Assign1_CrudUserTest@66746f57]" started-at="2025-07-16T19:17:39 IST" name="createUserTest" finished-at="2025-07-16T19:17:43 IST" duration-ms="4043" status="PASS">
+        <test-method signature="testInvalidFieldTypes()[pri:0, instance:com.api.tests.TC_06_Assign6_ErrorHandlingTest@1d730606]" started-at="2025-07-23T10:39:26 IST" name="testInvalidFieldTypes" finished-at="2025-07-23T10:39:27 IST" duration-ms="853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidFieldTypes -->
+        <test-method signature="testInvalidHttpMethod()[pri:0, instance:com.api.tests.TC_06_Assign6_ErrorHandlingTest@1d730606]" started-at="2025-07-23T10:39:27 IST" name="testInvalidHttpMethod" finished-at="2025-07-23T10:39:28 IST" duration-ms="926" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected error message in response body: {} expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected error message in response body: {} expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.api.tests.TC_06_Assign6_ErrorHandlingTest.testInvalidHttpMethod(TC_06_Assign6_ErrorHandlingTest.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidHttpMethod -->
+        <test-method signature="testMissingRequiredFields()[pri:0, instance:com.api.tests.TC_06_Assign6_ErrorHandlingTest@1d730606]" started-at="2025-07-23T10:39:28 IST" name="testMissingRequiredFields" finished-at="2025-07-23T10:39:28 IST" duration-ms="815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMissingRequiredFields -->
+      </class> <!-- com.api.tests.TC_06_Assign6_ErrorHandlingTest -->
+      <class name="com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest@4dc8caa7]" started-at="2025-07-23T10:39:25 IST" name="setup" finished-at="2025-07-23T10:39:25 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAuthorizationTest()[pri:0, instance:com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest@4dc8caa7]" started-at="2025-07-23T10:39:25 IST" name="verifyAuthorizationTest" description="Verify authorization test" finished-at="2025-07-23T10:39:26 IST" duration-ms="675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAuthorizationTest -->
+      </class> <!-- com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest -->
+      <class name="com.api.tests.TC_08_Assign8_JsonSchemaValidationTest">
+        <test-method signature="validateUsersJsonSchemaFromFile()[pri:0, instance:com.api.tests.TC_08_Assign8_JsonSchemaValidationTest@3b00856b]" started-at="2025-07-23T10:39:35 IST" name="validateUsersJsonSchemaFromFile" finished-at="2025-07-23T10:39:36 IST" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUsersJsonSchemaFromFile -->
+      </class> <!-- com.api.tests.TC_08_Assign8_JsonSchemaValidationTest -->
+      <class name="com.api.tests.TC_07_Assign7_PerformanceTest">
+        <test-method signature="testApiPerformance()[pri:0, instance:com.api.tests.TC_07_Assign7_PerformanceTest@3bcbb589]" started-at="2025-07-23T10:39:28 IST" name="testApiPerformance" finished-at="2025-07-23T10:39:35 IST" duration-ms="6755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApiPerformance -->
+      </class> <!-- com.api.tests.TC_07_Assign7_PerformanceTest -->
+      <class name="com.api.tests.TC_01_Assign1_CrudUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.TC_01_Assign1_CrudUserTest@112f364d]" started-at="2025-07-23T10:39:17 IST" name="setup" finished-at="2025-07-23T10:39:17 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createUserTest()[pri:1, instance:com.api.tests.TC_01_Assign1_CrudUserTest@112f364d]" started-at="2025-07-23T10:39:17 IST" name="createUserTest" finished-at="2025-07-23T10:39:21 IST" duration-ms="4074" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTest -->
       </class> <!-- com.api.tests.TC_01_Assign1_CrudUserTest -->
+      <class name="com.api.tests.TC_10_Assign10_PaginationTest">
+        <test-method signature="testMultiplePagesPagination()[pri:0, instance:com.api.tests.TC_10_Assign10_PaginationTest@3016fd5e]" started-at="2025-07-23T10:39:36 IST" name="testMultiplePagesPagination" finished-at="2025-07-23T10:39:37 IST" duration-ms="1655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplePagesPagination -->
+      </class> <!-- com.api.tests.TC_10_Assign10_PaginationTest -->
+      <class name="com.api.tests.TC_09_Assign9_ApiChainingTest">
+        <test-method signature="testApiChaining_CreateAndGetObject()[pri:0, instance:com.api.tests.TC_09_Assign9_ApiChainingTest@35d08e6c]" started-at="2025-07-23T10:39:37 IST" name="testApiChaining_CreateAndGetObject" finished-at="2025-07-23T10:39:38 IST" duration-ms="701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApiChaining_CreateAndGetObject -->
+      </class> <!-- com.api.tests.TC_09_Assign9_ApiChainingTest -->
+      <class name="com.api.tests.TC_02_Assign2_AuthorizationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.TC_02_Assign2_AuthorizationTest@241e8ea6]" started-at="2025-07-23T10:39:21 IST" name="setup" finished-at="2025-07-23T10:39:21 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAuthorizationTest()[pri:0, instance:com.api.tests.TC_02_Assign2_AuthorizationTest@241e8ea6]" started-at="2025-07-23T10:39:21 IST" name="verifyAuthorizationTest" description="Verify authorization test" finished-at="2025-07-23T10:39:22 IST" duration-ms="1006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAuthorizationTest -->
+      </class> <!-- com.api.tests.TC_02_Assign2_AuthorizationTest -->
+      <class name="com.api.tests.TC_04_Assign4_QueryParamTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.TC_04_Assign4_QueryParamTest@626c44e7]" started-at="2025-07-23T10:39:25 IST" name="setup" finished-at="2025-07-23T10:39:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAuthorizationTest()[pri:0, instance:com.api.tests.TC_04_Assign4_QueryParamTest@626c44e7]" started-at="2025-07-23T10:39:25 IST" name="verifyAuthorizationTest" description="Verify query parameter test" finished-at="2025-07-23T10:39:25 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAuthorizationTest -->
+      </class> <!-- com.api.tests.TC_04_Assign4_QueryParamTest -->
+      <class name="com.api.tests.TC_03_Assign3_CreateUsersDDTest">
+        <test-method signature="createUsersDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.api.tests.TC_03_Assign3_CreateUsersDDTest@542e560f]" started-at="2025-07-23T10:39:23 IST" name="createUsersDataDriven" data-provider="UserData" finished-at="2025-07-23T10:39:23 IST" duration-ms="747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc1 abc2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@12]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abc12@myorg.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsersDataDriven -->
+        <test-method signature="createUsersDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.api.tests.TC_03_Assign3_CreateUsersDDTest@542e560f]" started-at="2025-07-23T10:39:23 IST" name="createUsersDataDriven" data-provider="UserData" finished-at="2025-07-23T10:39:24 IST" duration-ms="705" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc3 abc4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@34]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abc34@myorg.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsersDataDriven -->
+        <test-method signature="createUsersDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.api.tests.TC_03_Assign3_CreateUsersDDTest@542e560f]" started-at="2025-07-23T10:39:24 IST" name="createUsersDataDriven" data-provider="UserData" finished-at="2025-07-23T10:39:25 IST" duration-ms="781" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc5 abc6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@56]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abc56@myorg.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsersDataDriven -->
+      </class> <!-- com.api.tests.TC_03_Assign3_CreateUsersDDTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

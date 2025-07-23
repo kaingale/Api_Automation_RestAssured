@@ -1,0 +1,11 @@
+2025-07-23 10:37:59 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\kaingale\Desktop\Api_Automation_Assignments\Api_Automation_Framework\performancetest-runner.xml"
+2025-07-23 10:37:59 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\kaingale\Desktop\Api_Automation_Assignments\Api_Automation_Framework\performancetest-runner.xml
+
+2025-07-23 10:37:59 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - ==== TC_07_Assign7_PerformanceTest started ====
+2025-07-23 10:37:59 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - creating validation pointers
+2025-07-23 10:38:07 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - printing all the validation times
+2025-07-23 10:38:07 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - validating avgtime
+2025-07-23 10:38:07 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - validating maxtime
+2025-07-23 10:38:07 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - validating mintime
+2025-07-23 10:38:07 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - ==== TC_07_Assign7_PerformanceTest finished ====

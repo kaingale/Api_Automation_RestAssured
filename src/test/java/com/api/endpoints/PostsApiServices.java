@@ -28,4 +28,22 @@ public class PostsApiServices {
 		
 		return response;
 	}
+
+	public Response readAllPosts() {
+		Response response = given()
+				.when()
+				.get(Routes.postsGetUrlQueryParam);
+		
+		return response;
+	}
+	
+	public Response readAllPostsPagination(int page, int pageSize) {
+		Response response = given()
+                .queryParam("_page", page)
+                .queryParam("_limit", pageSize)
+                .get(Routes.postsGetUrlQueryParam);
+		
+		return response;
+	}
+	
 }

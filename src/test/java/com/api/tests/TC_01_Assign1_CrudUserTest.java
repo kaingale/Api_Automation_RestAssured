@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import com.api.endpoints.UserApiServices;
 import com.api.models.UserRequestPayload;
+import com.api.utilities.ExtentReportManager;
 import com.api.models.UserAddressPayload;
 import com.api.models.UserGeoPayload;
 import com.api.models.UserCompanyPayload;
@@ -40,43 +41,56 @@ public class TC_01_Assign1_CrudUserTest {
 		logger = LogManager.getLogger(this.getClass());
 
 		logger.info("==== TC_01_Assign1_CrudUserTest started ====");
+		ExtentReportManager.logStep("==== TC_01_Assign1_CrudUserTest started ====");
 	}
 
 	@Test(priority = 1)
 	public void createUserTest() {
 		try {
 			logger.info("==== createUserTest started ====");
+			ExtentReportManager.logStep("==== createUserTest started ====");
 			logger.info("creating user");
 			Response response = userService.createUser(userPayload);
 
 			logger.info("assertions for status code");
+			ExtentReportManager.logStep("assertions for status code");
 			Assert.assertEquals(response.getStatusCode(), 201, "Post Test failed! status code is not 201..");
 			logger.info("asserting name");
+			ExtentReportManager.logStep("asserting name");
 			Assert.assertEquals(response.jsonPath().getString("name"), "John Doe");
 			logger.info("asserting username");
+			ExtentReportManager.logStep("asserting username");
 			Assert.assertEquals(response.jsonPath().getString("username"), "johndoe");
 			logger.info("asserting email");
+			ExtentReportManager.logStep("asserting email");
 			Assert.assertEquals(response.jsonPath().getString("email"), "john.doe@example.com");
 			logger.info("asserting address");
+			ExtentReportManager.logStep("asserting address");
 			Assert.assertEquals(response.jsonPath().getString("address.street"), "Main St");
 			Assert.assertEquals(response.jsonPath().getString("address.suite"), "Suite 100");
 			Assert.assertEquals(response.jsonPath().getString("address.city"), "Metropolis");
 			Assert.assertEquals(response.jsonPath().getString("address.zipcode"), "12345");
 			logger.info("asserting geo location");
+			ExtentReportManager.logStep("asserting geo location");
 			Assert.assertEquals(response.jsonPath().getString("address.geo.lat"), "12.34");
 			Assert.assertEquals(response.jsonPath().getString("address.geo.lng"), "56.78");
 			logger.info("asserting phone");
+			ExtentReportManager.logStep("asserting phone");
 			Assert.assertEquals(response.jsonPath().getString("phone"), "123-456-7890");
 			logger.info("asserting website");
+			ExtentReportManager.logStep("asserting website");
 			Assert.assertEquals(response.jsonPath().getString("website"), "johndoe.com");
 			logger.info("asserting company details");
+			ExtentReportManager.logStep("asserting company details");
 			Assert.assertEquals(response.jsonPath().getString("company.name"), "Deloitte");
 			Assert.assertEquals(response.jsonPath().getString("company.catchPhrase"), "Innovate your future");
 			Assert.assertEquals(response.jsonPath().getString("company.bs"), "consulting");
 
 			logger.info("==== createUserTest finished ====");
+			ExtentReportManager.logStep("==== createUserTest finished ====");
 		} catch (Exception e) {
 			logger.error("Test failed in catch block with error: {}", e.getMessage());
+			ExtentReportManager.logStep("Test failed in catch block");
 			Assert.fail("Test failed with exception: " + e.getMessage());
 		}
 	}
@@ -85,15 +99,19 @@ public class TC_01_Assign1_CrudUserTest {
 	public void readUserById() {
 		try {
 			logger.info("==== readUserById started ====");
+			ExtentReportManager.logStep("==== readUserById started ====");
 			logger.info("reading user by id");
 			Response response = userService.readUser("1");
 
 			logger.info("asserting status code");
+			ExtentReportManager.logStep("asserting status code");
 			Assert.assertEquals(response.getStatusCode(), 200, "Get Test failed! status code is not 200..");
 
 			logger.info("==== readUserById finished ====");
+			ExtentReportManager.logStep("==== readUserById finished ====");
 		} catch (Exception e) {
 			logger.error("Test failed in catch block with error: {}", e.getMessage());
+			ExtentReportManager.logStep("Test failed in catch block");
 			Assert.fail("Test failed with exception: " + e.getMessage());
 		}
 	}
@@ -102,19 +120,24 @@ public class TC_01_Assign1_CrudUserTest {
 	public void updateUserTest() {
 		try {
 			logger.info("==== updateUserTest started ====");
+			ExtentReportManager.logStep("==== updateUserTest started ====");
 			userPayload.setName(faker.name().fullName());
 			userPayload.setUsername(faker.name().username());
 			userPayload.setEmail(faker.internet().emailAddress());
 
 			logger.info("updating user by id");
+			ExtentReportManager.logStep("updating user by id");
 			Response response = userService.updateUser(userPayload, "1");
 			response.then().log().body();
 			logger.info("validating response status code");
+			ExtentReportManager.logStep("validating response status code");
 			Assert.assertEquals(response.getStatusCode(), 200, "Put Test failed! status code is not 200..");
 
 			logger.info("==== updateUserTest finished ====");
+			ExtentReportManager.logStep("==== updateUserTest finished ====");
 		} catch (Exception e) {
 			logger.error("Test failed in catch block with error: {}", e.getMessage());
+			ExtentReportManager.logStep("Test failed in catch block ");
 			Assert.fail("Test failed with exception: " + e.getMessage());
 		}
 	}
@@ -123,17 +146,21 @@ public class TC_01_Assign1_CrudUserTest {
 	public void deleteUserTest() {
 		try {
 			logger.info("==== deleteUserTest started ====");
+			ExtentReportManager.logStep("==== deleteUserTest started ====");
 			logger.info("deleting user by id");
 			Response response = userService.deleteUser("1");
 
 			logger.info("validating response status code");
+			ExtentReportManager.logStep("validating response status code");
 			Assert.assertEquals(response.getStatusCode(), 200, "Delete Test failed! status code is not 200..");
 
 			logger.info("==== deleteUserTest finished ====");
-			logger.info("==== TC_01_Assign1_CrudUserTest finished ====");
+			ExtentReportManager.logStep("==== deleteUserTest finished ====");
 		} catch (Exception e) {
 			logger.error("Test failed in catch block with error: {}", e.getMessage());
 			Assert.fail("Test failed with exception: " + e.getMessage());
 		}
+		logger.info("==== TC_01_Assign1_CrudUserTest finished ====");
+		ExtentReportManager.logStep("==== TC_01_Assign1_CrudUserTest finished ====");
 	}
 }

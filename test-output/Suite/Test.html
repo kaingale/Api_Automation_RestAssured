@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 16 19:17:39 IST 2025</td>
+<td>Started on:</td><td>Wed Jul 23 10:39:16 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4464 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21462 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,55 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.api.tests.TC_06_Assign6_ErrorHandlingTest.testInvalidHttpMethod()'><b>testInvalidHttpMethod</b><br>Test class: com.api.tests.TC_06_Assign6_ErrorHandlingTest</td>
+<td><div><pre>java.lang.AssertionError: Expected error message in response body: {} expected [true] but found [false]
+	at com.api.tests.TC_06_Assign6_ErrorHandlingTest.testInvalidHttpMethod(TC_06_Assign6_ErrorHandlingTest.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1750404486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1750404486'><pre>java.lang.AssertionError: Expected error message in response body: {} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.api.tests.TC_06_Assign6_ErrorHandlingTest.testInvalidHttpMethod(TC_06_Assign6_ErrorHandlingTest.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.api.tests.TC_06_Assign6_ErrorHandlingTest@1d730606</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -79,7 +128,67 @@ function toggleAllBoxes() {
 <td title='com.api.tests.TC_01_Assign1_CrudUserTest.createUserTest()'><b>createUserTest</b><br>Test class: com.api.tests.TC_01_Assign1_CrudUserTest</td>
 <td></td>
 <td>4</td>
-<td>com.api.tests.TC_01_Assign1_CrudUserTest@66746f57</td></tr>
+<td>com.api.tests.TC_01_Assign1_CrudUserTest@112f364d</td></tr>
+<tr>
+<td title='com.api.tests.TC_09_Assign9_ApiChainingTest.testApiChaining_CreateAndGetObject()'><b>testApiChaining_CreateAndGetObject</b><br>Test class: com.api.tests.TC_09_Assign9_ApiChainingTest</td>
+<td></td>
+<td>0</td>
+<td>com.api.tests.TC_09_Assign9_ApiChainingTest@35d08e6c</td></tr>
+<tr>
+<td title='com.api.tests.TC_02_Assign2_AuthorizationTest.verifyAuthorizationTest()'><b>verifyAuthorizationTest</b><br>Test class: com.api.tests.TC_02_Assign2_AuthorizationTest<br>Test method: Verify authorization test</td>
+<td></td>
+<td>1</td>
+<td>com.api.tests.TC_02_Assign2_AuthorizationTest@241e8ea6</td></tr>
+<tr>
+<td title='com.api.tests.TC_06_Assign6_ErrorHandlingTest.testMissingRequiredFields()'><b>testMissingRequiredFields</b><br>Test class: com.api.tests.TC_06_Assign6_ErrorHandlingTest</td>
+<td></td>
+<td>0</td>
+<td>com.api.tests.TC_06_Assign6_ErrorHandlingTest@1d730606</td></tr>
+<tr>
+<td title='com.api.tests.TC_03_Assign3_CreateUsersDDTest.createUsersDataDriven()'><b>createUsersDataDriven</b><br>Test class: com.api.tests.TC_03_Assign3_CreateUsersDDTest<br>Parameters: abc1 abc2, abc@12, abc12@myorg.com</td>
+<td></td>
+<td>0</td>
+<td>com.api.tests.TC_03_Assign3_CreateUsersDDTest@542e560f</td></tr>
+<tr>
+<td title='com.api.tests.TC_06_Assign6_ErrorHandlingTest.testInvalidFieldTypes()'><b>testInvalidFieldTypes</b><br>Test class: com.api.tests.TC_06_Assign6_ErrorHandlingTest</td>
+<td></td>
+<td>0</td>
+<td>com.api.tests.TC_06_Assign6_ErrorHandlingTest@1d730606</td></tr>
+<tr>
+<td title='com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest.verifyAuthorizationTest()'><b>verifyAuthorizationTest</b><br>Test class: com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest<br>Test method: Verify authorization test</td>
+<td></td>
+<td>0</td>
+<td>com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest@4dc8caa7</td></tr>
+<tr>
+<td title='com.api.tests.TC_03_Assign3_CreateUsersDDTest.createUsersDataDriven()'><b>createUsersDataDriven</b><br>Test class: com.api.tests.TC_03_Assign3_CreateUsersDDTest<br>Parameters: abc5 abc6, abc@56, abc56@myorg.com</td>
+<td></td>
+<td>0</td>
+<td>com.api.tests.TC_03_Assign3_CreateUsersDDTest@542e560f</td></tr>
+<tr>
+<td title='com.api.tests.TC_07_Assign7_PerformanceTest.testApiPerformance()'><b>testApiPerformance</b><br>Test class: com.api.tests.TC_07_Assign7_PerformanceTest</td>
+<td></td>
+<td>6</td>
+<td>com.api.tests.TC_07_Assign7_PerformanceTest@3bcbb589</td></tr>
+<tr>
+<td title='com.api.tests.TC_08_Assign8_JsonSchemaValidationTest.validateUsersJsonSchemaFromFile()'><b>validateUsersJsonSchemaFromFile</b><br>Test class: com.api.tests.TC_08_Assign8_JsonSchemaValidationTest</td>
+<td></td>
+<td>0</td>
+<td>com.api.tests.TC_08_Assign8_JsonSchemaValidationTest@3b00856b</td></tr>
+<tr>
+<td title='com.api.tests.TC_03_Assign3_CreateUsersDDTest.createUsersDataDriven()'><b>createUsersDataDriven</b><br>Test class: com.api.tests.TC_03_Assign3_CreateUsersDDTest<br>Parameters: abc3 abc4, abc@34, abc34@myorg.com</td>
+<td></td>
+<td>0</td>
+<td>com.api.tests.TC_03_Assign3_CreateUsersDDTest@542e560f</td></tr>
+<tr>
+<td title='com.api.tests.TC_04_Assign4_QueryParamTest.verifyAuthorizationTest()'><b>verifyAuthorizationTest</b><br>Test class: com.api.tests.TC_04_Assign4_QueryParamTest<br>Test method: Verify query parameter test</td>
+<td></td>
+<td>0</td>
+<td>com.api.tests.TC_04_Assign4_QueryParamTest@626c44e7</td></tr>
+<tr>
+<td title='com.api.tests.TC_10_Assign10_PaginationTest.testMultiplePagesPagination()'><b>testMultiplePagesPagination</b><br>Test class: com.api.tests.TC_10_Assign10_PaginationTest</td>
+<td></td>
+<td>1</td>
+<td>com.api.tests.TC_10_Assign10_PaginationTest@3016fd5e</td></tr>
 </table><p>
 </body>
 </html>

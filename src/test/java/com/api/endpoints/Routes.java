@@ -24,4 +24,12 @@ public class Routes {
 	//comments module urls
 	protected static String commentsGetUrl = BASE_URL + "/comments";
 	
+	
+	//api chaining urls
+	private static final String BASE_URL1 = "https://api.restful-api.dev";
+	protected static String userPostChiningUrl = BASE_URL + "/objects";
+	protected static String userGetChiningUrl = BASE_URL + "/objects";
+	
+	
+	
 }
