@@ -7,6 +7,9 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+  
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -89,8 +92,8 @@ jobs:
       - name: Keep only the latest report
         run: |
           cd test-reports
-          latest=$(ls -t Test-Report*.html | head -n1)
-          ls Test-Report*.html | grep -v "$latest" | xargs rm -f || true
+          latest=$(ls -t TestReport*.html | head -n1)
+          ls TestReport*.html | grep -v "$latest" | xargs rm -f || true
           echo "<html><head><meta http-equiv='refresh' content='0; url=$latest'></head><body></body></html>" > index.html
 
       - name: Deploy Latest Test Report to GitHub Pages
