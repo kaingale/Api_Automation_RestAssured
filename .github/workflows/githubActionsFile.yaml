@@ -65,6 +65,9 @@ jobs:
         with:
           name: test-reports
           path: ./test-reports/
+          
+      - name: List test-reports contents
+        run: ls -l test-reports
 
   deploy:
     needs: test
@@ -80,16 +83,16 @@ jobs:
           name: test-reports
           path: test-reports
  
-      - name: Generate index.html for all reports
+      - name: Keep only the latest report
         run: |
-          echo "<html><body><h1>Test Reports</h1><ul>" > test-reports/index.html
-          for file in test-reports/Test-Report*.html; do
-            fname=$(basename "$file")
-            echo "<li><a href=\"$fname\">$fname</a></li>" >> test-reports/index.html
-          done
-          echo "</ul></body></html>" >> test-reports/index.html
+          cd test-reports
+          latest=$(ls -t TestReport*.html | head -n1)
+          # Remove all other reports except the latest
+          ls TestReport*.html | grep -v "$latest" | xargs rm -f
+          # Optionally, generate a simple index.html pointing to the latest report
+          echo "<html><head><meta http-equiv='refresh' content='0; url=$latest'></head><body></body></html>" > index.html
 
-      - name: Deploy Test Reports to GitHub Pages
+      - name: Deploy Latest Test Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
