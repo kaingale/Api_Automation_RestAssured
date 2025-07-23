@@ -8,6 +8,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -89,7 +92,7 @@ jobs:
       - name: Generate index.html for all reports
         run: |
           echo "<html><body><h1>Test Reports</h1><ul>" > test-reports/index.html
-          for file in test-reports/Test-Report*.html; do
+          for file in test-reports/TestReport*.html; do
             fname=$(basename "$file")
             echo "<li><a href=\"$fname\">$fname</a></li>" >> test-reports/index.html
           done
