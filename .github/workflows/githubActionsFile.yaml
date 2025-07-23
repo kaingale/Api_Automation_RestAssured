@@ -7,6 +7,9 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+  
+permissions:
+  contents: write
 
 permissions:
   contents: write
@@ -97,6 +100,7 @@ jobs:
             echo "<li><a href=\"$fname\">$fname</a></li>" >> test-reports/index.html
           done
           echo "</ul></body></html>" >> test-reports/index.html
+
 
       - name: Deploy Latest Test Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
