@@ -1,5 +1,6 @@
 package com.api.utilities;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -21,9 +22,12 @@ public class ExtentReportManager implements ITestListener {
     private static String reportName;
 
     public void onStart(ITestContext testContext) {
-        String currentDateTimeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+    	String currentDateTimeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+        String reportDir = "test-reports";
+        new File(reportDir).mkdirs(); // Ensure directory exists
+
         reportName = "TestReport_" + currentDateTimeStamp + ".html";
-        sparkReporter = new ExtentSparkReporter(".\\test-reports\\" + reportName);
+        sparkReporter = new ExtentSparkReporter(reportDir + File.separator + reportName);
 
         sparkReporter.config().setDocumentTitle("Api Automation Framework Reports");
         sparkReporter.config().setReportName("Api Testing - JsonPlaceHolder");
