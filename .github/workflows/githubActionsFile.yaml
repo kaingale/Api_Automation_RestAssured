@@ -41,6 +41,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+      - name: Clean test-reports directory
+        run: rm -rf test-reports/* || true
 
       - name: Set up JDK 21
         uses: actions/setup-java@v4
@@ -59,15 +62,15 @@ jobs:
       - name: Run RestAssured TestNG Tests
         run: mvn test
 
+      - name: List contents of test-reports after test
+        run: ls -l test-reports
+
       - name: Archive Test Reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-reports
           path: ./test-reports/
-          
-      - name: List test-reports contents
-        run: ls -l test-reports
 
   deploy:
     needs: test
@@ -83,13 +86,14 @@ jobs:
           name: test-reports
           path: test-reports
  
+      - name: List files to be published
+        run: ls -l test-reports
+
       - name: Keep only the latest report
         run: |
           cd test-reports
-          latest=$(ls -t TestReport*.html | head -n1)
-          # Remove all other reports except the latest
-          ls TestReport*.html | grep -v "$latest" | xargs rm -f
-          # Optionally, generate a simple index.html pointing to the latest report
+          latest=$(ls -t Test-Report*.html | head -n1)
+          ls Test-Report*.html | grep -v "$latest" | xargs rm -f || true
           echo "<html><head><meta http-equiv='refresh' content='0; url=$latest'></head><body></body></html>" > index.html
 
       - name: Deploy Latest Test Report to GitHub Pages
