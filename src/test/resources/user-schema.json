@@ -1,0 +1,112 @@
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "username",
+      "email",
+      "address",
+      "phone",
+      "website",
+      "company"
+    ],
+    "properties": {
+      "id": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "username": {
+        "type": "string",
+        "minLength": 1
+      },
+      "email": {
+        "type": "string",
+        "minLength": 1
+      },
+      "address": {
+        "type": "object",
+        "properties": {
+          "street": {
+            "type": "string",
+            "minLength": 1
+          },
+          "suite": {
+            "type": "string",
+            "minLength": 1
+          },
+          "city": {
+            "type": "string",
+            "minLength": 1
+          },
+          "zipcode": {
+            "type": "string",
+            "minLength": 1
+          },
+          "geo": {
+            "type": "object",
+            "properties": {
+              "lat": {
+                "type": "string",
+                "minLength": 1
+              },
+              "lng": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "lat",
+              "lng"
+            ]
+          }
+        },
+        "required": [
+          "street",
+          "suite",
+          "city",
+          "zipcode",
+          "geo"
+        ]
+      },
+      "phone": {
+        "type": "string",
+        "minLength": 1
+      },
+      "website": {
+        "type": "string",
+        "minLength": 1
+      },
+      "company": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "catchPhrase": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bs": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "name",
+          "catchPhrase",
+          "bs"
+        ]
+      }
+    }
+  }
+}

@@ -6,12 +6,12 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest">
+      <class name="com.api.tests.TC_06_Assign6_ErrorHandlingTest">
         <methods>
-          <include name="verifyAuthorizationTest"/>
+          <include name="testInvalidHttpMethod"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest -->
+      </class> <!-- com.api.tests.TC_06_Assign6_ErrorHandlingTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

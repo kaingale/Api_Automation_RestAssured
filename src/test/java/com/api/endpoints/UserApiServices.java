@@ -2,8 +2,11 @@ package com.api.endpoints;
 
 import static io.restassured.RestAssured.given;
 
+import org.json.JSONObject;
+
 import com.api.models.UserRequestPayload;
 
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -23,7 +26,15 @@ public class UserApiServices extends Routes{
 		Response response = given()
 				.pathParam("id", userId)
 				.when()
-				.get(Routes.userDeleteUrl);
+				.get(Routes.userGetUrl);
+		
+		return response;
+	}
+
+	public Response readAllUsers() {
+		Response response = given()
+				.when()
+				.get(Routes.userPostUrl);
 		
 		return response;
 	}
@@ -47,6 +58,36 @@ public class UserApiServices extends Routes{
 				.delete(Routes.userDeleteUrl);
 		
 		return response;
+	}
+
+	public Response deleteToAllUsers() {
+		Response response = given()
+				.when()
+				.delete(Routes.userPostUrl);
+		
+		return response;
+	}
+	
+	public Response createUserEmptyBody() {
+		Response response = given()
+        .header("Content-Type", "application/json")
+        .body("{}")
+        .post(Routes.userPostUrl);
+		
+		return response;
+	}
+	
+	public Response createUserInvalidFieldTypes() {
+		 JSONObject invalidUser = new JSONObject();
+	     invalidUser.put("name", 12345); 
+	     invalidUser.put("email", true);
+	     
+	     Response response = given()
+	             .header("Content-Type", "application/json")
+	             .body(invalidUser.toString())
+	             .post(Routes.userPostUrl);
+	     
+	     return response;
 	}
 	
 }

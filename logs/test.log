@@ -1,9 +1,147 @@
-2025-07-16 10:43:54 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\kaingale\Desktop\Api_Automation_Assignments\Api_Automation_Framework\testng.xml"
-2025-07-16 10:43:54 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2025-07-23 10:39:16 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\kaingale\Desktop\Api_Automation_Assignments\Api_Automation_Framework\testng.xml"
+2025-07-23 10:39:16 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\kaingale\Desktop\Api_Automation_Assignments\Api_Automation_Framework\testng.xml
 
-2025-07-16 10:43:55 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - ==== TC_02_Assign2_AuthorizationTest started ====
-2025-07-16 10:43:55 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - creating post
-2025-07-16 10:43:57 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - validating authorization header and status code
-2025-07-16 10:43:57 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - validating response values
-2025-07-16 10:43:57 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - ==== TC_02_Assign2_AuthorizationTest finished ====
+2025-07-23 10:39:17 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - ==== TC_01_Assign1_CrudUserTest started ====
+2025-07-23 10:39:17 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - ==== createUserTest started ====
+2025-07-23 10:39:17 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - creating user
+2025-07-23 10:39:20 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - assertions for status code
+2025-07-23 10:39:20 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - asserting name
+2025-07-23 10:39:21 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - asserting username
+2025-07-23 10:39:21 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - asserting email
+2025-07-23 10:39:21 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - asserting address
+2025-07-23 10:39:21 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - asserting geo location
+2025-07-23 10:39:21 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - asserting phone
+2025-07-23 10:39:21 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - asserting website
+2025-07-23 10:39:21 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - asserting company details
+2025-07-23 10:39:21 [main] INFO  com.api.tests.TC_01_Assign1_CrudUserTest - ==== createUserTest finished ====
+2025-07-23 10:39:21 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - ==== TC_02_Assign2_AuthorizationTest started ====
+2025-07-23 10:39:21 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - creating post
+2025-07-23 10:39:22 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - validating authorization header and status code
+2025-07-23 10:39:22 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - validating response values
+2025-07-23 10:39:22 [main] INFO  com.api.tests.TC_02_Assign2_AuthorizationTest - ==== TC_02_Assign2_AuthorizationTest finished ====
+2025-07-23 10:39:22 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-23 10:39:22 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-07-23 10:39:22 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-07-23 10:39:23 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - ==== TC_03_Assign3_CreateUsersDDTest started ====
+2025-07-23 10:39:23 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - setting userPayload data from excelsheet to pojo class
+2025-07-23 10:39:23 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - creating user for username: abc@12
+2025-07-23 10:39:23 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - validating the response status code
+2025-07-23 10:39:23 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - ==== TC_03_Assign3_CreateUsersDDTest finished ====
+2025-07-23 10:39:23 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - ==== TC_03_Assign3_CreateUsersDDTest started ====
+2025-07-23 10:39:23 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - setting userPayload data from excelsheet to pojo class
+2025-07-23 10:39:23 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - creating user for username: abc@34
+2025-07-23 10:39:24 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - validating the response status code
+2025-07-23 10:39:24 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - ==== TC_03_Assign3_CreateUsersDDTest finished ====
+2025-07-23 10:39:24 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - ==== TC_03_Assign3_CreateUsersDDTest started ====
+2025-07-23 10:39:24 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - setting userPayload data from excelsheet to pojo class
+2025-07-23 10:39:24 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - creating user for username: abc@56
+2025-07-23 10:39:25 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - validating the response status code
+2025-07-23 10:39:25 [main] INFO  com.api.tests.TC_03_Assign3_CreateUsersDDTest - ==== TC_03_Assign3_CreateUsersDDTest finished ====
+2025-07-23 10:39:25 [main] INFO  com.api.tests.TC_04_Assign4_QueryParamTest - ==== TC_04_Assign4_QueryParamTest started ====
+2025-07-23 10:39:25 [main] INFO  com.api.tests.TC_04_Assign4_QueryParamTest - getting posts by userId
+2025-07-23 10:39:25 [main] INFO  com.api.tests.TC_04_Assign4_QueryParamTest - asserting status code
+2025-07-23 10:39:25 [main] INFO  com.api.tests.TC_04_Assign4_QueryParamTest - asserting total no of response objects present for userId
+2025-07-23 10:39:25 [main] INFO  com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest - ==== TC_05_Assign5_CustomHeaderAndCookiesTest started ====
+2025-07-23 10:39:25 [main] INFO  com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest - getting comments by postid
+2025-07-23 10:39:26 [main] INFO  com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest - validating authorization header and custom cookies
+2025-07-23 10:39:26 [main] INFO  com.api.tests.TC_05_Assign5_CustomHeaderAndCookiesTest - ==== TC_05_Assign5_CustomHeaderAndCookiesTest finished ====
+2025-07-23 10:39:26 [main] INFO  com.api.tests.TC_06_Assign6_ErrorHandlingTest - testInvalidFieldtypes started
+2025-07-23 10:39:26 [main] INFO  com.api.tests.TC_06_Assign6_ErrorHandlingTest - creating user with invalid fieldtypes
+2025-07-23 10:39:27 [main] INFO  com.api.tests.TC_06_Assign6_ErrorHandlingTest - validating error code
+2025-07-23 10:39:27 [main] INFO  com.api.tests.TC_06_Assign6_ErrorHandlingTest - invalid http method started
+2025-07-23 10:39:27 [main] INFO  com.api.tests.TC_06_Assign6_ErrorHandlingTest - calling deleteAllUser method
+2025-07-23 10:39:28 [main] INFO  com.api.tests.TC_06_Assign6_ErrorHandlingTest - validating error code
+2025-07-23 10:39:28 [main] INFO  com.api.tests.TC_06_Assign6_ErrorHandlingTest - validating error msg in reponsebody
+2025-07-23 10:39:28 [main] INFO  com.api.tests.TC_06_Assign6_ErrorHandlingTest - ==== TC_06_Assign6_ErrorHandlingTest started ====
+2025-07-23 10:39:28 [main] INFO  com.api.tests.TC_06_Assign6_ErrorHandlingTest - testMissingRequiredFields started
+2025-07-23 10:39:28 [main] INFO  com.api.tests.TC_06_Assign6_ErrorHandlingTest - creating user with empty body
+2025-07-23 10:39:28 [main] INFO  com.api.tests.TC_06_Assign6_ErrorHandlingTest - validating error code
+2025-07-23 10:39:28 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - ==== TC_07_Assign7_PerformanceTest started ====
+2025-07-23 10:39:28 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - creating validation pointers
+2025-07-23 10:39:35 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - printing all the validation times
+2025-07-23 10:39:35 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - validating avgtime
+2025-07-23 10:39:35 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - validating maxtime
+2025-07-23 10:39:35 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - validating mintime
+2025-07-23 10:39:35 [main] INFO  com.api.tests.TC_07_Assign7_PerformanceTest - ==== TC_07_Assign7_PerformanceTest finished ====
+2025-07-23 10:39:35 [main] INFO  com.api.tests.TC_08_Assign8_JsonSchemaValidationTest - ==== TC_08_Assign8_JsonSchemaValidationTest started ====
+2025-07-23 10:39:35 [main] INFO  com.api.tests.TC_08_Assign8_JsonSchemaValidationTest - reading all the users
+2025-07-23 10:39:35 [main] INFO  com.api.tests.TC_08_Assign8_JsonSchemaValidationTest - validating status code
+2025-07-23 10:39:35 [main] INFO  com.api.tests.TC_08_Assign8_JsonSchemaValidationTest - validating json schema using user-schema.json file
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_08_Assign8_JsonSchemaValidationTest - ==== TC_08_Assign8_JsonSchemaValidationTest finished ====
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - ==== TC_10_Assign10_PaginationTest started ====
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - calling readallpostspagination method
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating status code
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - creating list of ids from response body
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - calling readallpostspagination method
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating status code
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - creating list of ids from response body
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:36 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - calling readallpostspagination method
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating status code
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - creating list of ids from response body
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - calling readallpostspagination method
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating status code
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - creating list of ids from response body
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - calling readallpostspagination method
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating status code
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - creating list of ids from response body
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - validating ids
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_10_Assign10_PaginationTest - ==== TC_10_Assign10_PaginationTest finished ====
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_09_Assign9_ApiChainingTest - ==== TC_09_Assign9_ApiChainingTest started ====
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_09_Assign9_ApiChainingTest - payload setup
+2025-07-23 10:39:37 [main] INFO  com.api.tests.TC_09_Assign9_ApiChainingTest - creating post request
+2025-07-23 10:39:38 [main] INFO  com.api.tests.TC_09_Assign9_ApiChainingTest - getting object id from response
+2025-07-23 10:39:38 [main] INFO  com.api.tests.TC_09_Assign9_ApiChainingTest - validating object id
+2025-07-23 10:39:38 [main] INFO  com.api.tests.TC_09_Assign9_ApiChainingTest - using object id from post request in get request to read object by id
+2025-07-23 10:39:38 [main] INFO  com.api.tests.TC_09_Assign9_ApiChainingTest - extracting id and name from getresponse
+2025-07-23 10:39:38 [main] INFO  com.api.tests.TC_09_Assign9_ApiChainingTest - validating object id and name
+2025-07-23 10:39:38 [main] INFO  com.api.tests.TC_09_Assign9_ApiChainingTest - ==== TC_09_Assign9_ApiChainingTest finished ====
